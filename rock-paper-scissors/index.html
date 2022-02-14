@@ -6,17 +6,48 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h2>Want to stop the robots from taking over the world?</h2>
+    <section class="game">
+      <div class="scores">
+        <div class="player">
+          <h2>Player</h2>
+          <p id="player-score">0</p>
+        </div>
 
-    <img class="rock btn" src="./img/rock.png" alt="hand gesturing 'rock'" />
-    <img class="paper btn" src="./img/paper.png" alt="hand gesturing 'paper'" />
-    <img
-      class="scissors btn"
-      src="./img/scissors.png"
-      alt="hand gesturing 'scissors'"
-    />
-    <button id="play">Play</button>
+        <div class="computer">
+          <h2>Computer</h2>
+          <p id="computer-score">0</p>
+        </div>
+      </div>
 
+      <div class="intro fadeIn">
+        <h1 class="intro-title">
+          Save the World from the robots! Face the computer in a game of Rock,
+          Paper and Scissors.
+        </h1>
+        <button>Let's go!</button>
+      </div>
+
+      <div class="round fadeOut">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+          <img
+            class="player-hand"
+            src="./img/rock.png"
+            alt="Player hand initial state(rock)"
+          />
+          <img
+            class="computer-hand"
+            src="./img/rock.png"
+            alt="Computer hand inital state(rock)"
+          />
+        </div>
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
